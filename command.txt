@@ -1,0 +1,30 @@
+  1  cd rabbitmq/
+  2  git branch f2
+  3  git checkout f2
+  4  git status
+  5  git add .
+  6  commit -m'message'
+  7  git commit -m "first commit"
+  8  git status
+  9  git add .
+  10  git commit -m "first commit"
+  11  git push origin f2
+  12  git branch
+  13  git checkout master
+  14  git checkout main
+  15  git status
+  16  git add .
+  17  git commit -m "first main commit"
+  18  git push origin main
+  19  git status
+  20  git add .
+  21  git commit -m "first main commit"
+  22  git push origin main
+  23  git merge main f2
+       conflict
+  24  git mergetool
+  25  git merge main f2
+  26  git status
+  27  git commit -m "conflict resolve"
+  28  git push origin main
+  29  history
